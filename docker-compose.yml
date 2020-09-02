@@ -1,6 +1,10 @@
 app:
   build: .
   command: bitrise --version
+  container_name: 'front-end'
+  ports:
+    - "8080:8080"
   volumes:
     - ./_tmp:/bitrise/tmp
     - ./system_report.sh:/bitrise/src/system_report.sh
+    - ./www:/bitrise/src/www

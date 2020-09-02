@@ -12,6 +12,16 @@ RUN npm install -g cordova
 RUN cordova -v
 
 # ------------------------------------------------------
+# --- Vuejs CLI
+
+RUN npm install -g @vue/cli
+
+# ------------------------------------------------------
+# --- Quasar CLI
+
+RUN npm install -g @quasar/cli
+
+# ------------------------------------------------------
 # --- Install Ant
 
 RUN apt-get install -y ant
