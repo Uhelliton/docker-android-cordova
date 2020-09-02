@@ -22,6 +22,11 @@ RUN npm install -g @vue/cli
 RUN npm install -g @quasar/cli
 
 # ------------------------------------------------------
+# --- Bit
+
+RUN npm install -g bit-bin
+
+# ------------------------------------------------------
 # --- Install Ant
 
 RUN apt-get install -y ant
